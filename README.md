@@ -15,11 +15,13 @@
 <p align="justify">
 O objetivo deste projeto é gerar a transcrição e tradução do vídeo original, além de um vídeo de saída de exemplo para comprovar o conceito de voice-over.
 
-Então o que teremos em execução em nosso notebook (colocar link github) são todas as etapas do processo:
+Então o que teremos em execução em nosso [notebook](https://github.com/lucas-porto/teste_hotmart/blob/master/Case_Hotmart.ipynb) são todas as etapas do processo:
 
 - Transcrição do vídeo
 - Tradução do vídeo
 - Criar um clipe e o voice-over (dublagem em inglês)
+
+Ponto importante, deve-se alterar as pastas de origem e destino, já que referenciei meu ambiente do Google Drive.
 </p>
 
 ## :computer: Ambiente de execução
