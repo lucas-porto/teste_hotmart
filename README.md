@@ -21,6 +21,8 @@ Então o que teremos em execução em nosso [notebook](https://github.com/lucas-
 - Tradução do vídeo
 - Criar um clipe e o voice-over (dublagem em inglês)
 
+Todos os arquivos estão disponíveis na pasta `output` no repositório deste Case.
+
 Ponto importante, deve-se alterar as pastas de origem e destino, já que referenciei meu ambiente do Google Drive.
 </p>
 
@@ -89,11 +91,11 @@ A criação da transcrição do vídeo nós utilizamos o Whisper da OpenAi, ele 
 
 Então primeiro separamos o áudio do vídeo usando a biblioteca MoviePy.
 
-Após iremos criar a transcrição com o Whisper, foi criada a função <mark>setup_model</mark> para facilitar, então deve-se passar qual tarefa que deseja, neste passo é a <mark>"transcribe"</mark> para transcrição do áudio. Logo após salvando o resultado.
+Após iremos criar a transcrição com o Whisper, foi criada a função `setup_model` para facilitar, então deve-se passar qual tarefa que deseja, neste passo é a `"transcribe"` para transcrição do áudio. Logo após salvando o resultado.
 
 ### Etapa 2: Criar Tradução
 
-Para a tradução utilizamos o mesmo modelo e com a função que criamos, <mark>setup_model</mark>, passamos a tarefa <mark>"translate"</mark> para tradução para o inglês. 
+Para a tradução utilizamos o mesmo modelo e com a função que criamos, `setup_model`, passamos a tarefa`"translate"` para tradução para o inglês. 
 
 Neste ponto poderíamos comparar a eficiência com outros modelos de NLP na execução da tradução, pode ser um teste para implementações futuras.
 
@@ -118,12 +120,12 @@ Neste ponto teremos as seguintes etapas:
 
 #### Etapa 3.1: Criar o corte
 
-Utiliza-se a biblioteca MoviePy, criei a função <mark>creating_clip</mark> para facilitar, sendo necessário passar os caminhos do vídeo de entrada, onde salvar o clipe e o tempo de início e fim do corte em segundos.
+Utiliza-se a biblioteca MoviePy, criei a função `creating_clip` para facilitar, sendo necessário passar os caminhos do vídeo de entrada, onde salvar o clipe e o tempo de início e fim do corte em segundos.
 
 
 #### Etapa 3.2: Criar a tradução do corte
 
-Mesma ação de criar a tradução do vídeo inicial, somente mudando o vídeo a ser traduzido na função <mark>setup_model</mark>.
+Mesma ação de criar a tradução do vídeo inicial, somente mudando o vídeo a ser traduzido na função `setup_model`.
 
 #### Etapa 3.3: Clonar a voz do locutor do vídeo
 
@@ -155,14 +157,14 @@ O áudio gerado ficou um pouco maior do que nosso vídeo, logo tivemos que manip
 
 #### Etapa 3.4: Retirar o áudio original do vídeo
 
-Este passo poderia ser executado anteriormente, mas é necessário salvarmos apenas o vídeo sem áudio a fim de inserirmos a nova camada de áudio. Criamos a função <mark>remove_audio_from_video</mark> para realizar essa retirada do áudio.
+Este passo poderia ser executado anteriormente, mas é necessário salvarmos apenas o vídeo sem áudio a fim de inserirmos a nova camada de áudio. Criamos a função `remove_audio_from_video` para realizar essa retirada do áudio.
 
 Também poderíamos tentar com ferramentas que pudesse manipular as faixas de áudio, assim mantendo o áudio de background. Serve para futuras implementações.
 
 
 #### Etapa 3.4: Adicionar o novo áudio
 
-Assim como o passo anterior utilizamos a biblioteca MoviePy e na função de auxílio <mark>add_audio_to_video</mark> criada executamos o passo de salvar o novo áudio ao nosso clipe.
+Assim como o passo anterior utilizamos a biblioteca MoviePy e na função de auxílio `add_audio_to_video` criada executamos o passo de salvar o novo áudio ao nosso clipe.
 
 
 ## :heart: Obrigado
