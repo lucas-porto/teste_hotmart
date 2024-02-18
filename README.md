@@ -100,7 +100,7 @@ Neste ponto poderíamos comparar a eficiência com outros modelos de NLP na exec
 
 ### Etapa 3: Criar Clipe com Voice-over
 
-Esta etapa é a maior de todas do projeto e foi mais quebrada e não encapsulada para ser executada em partes caso haja desconexões.
+Esta etapa é a maior de todas do projeto, por isso a etapa que não foi encapsulada para ser executada em partes caso haja desconexões.
 
 Neste ponto teremos as seguintes etapas:
 
@@ -131,9 +131,9 @@ A fim de não ter apenas as vozes que constumam ser utilizadas em vídeos dublad
 
 ##### Etapa 3.3.1: Gerar arquivos de treino
 
-Para o treinamento no mínimo 2 áudios de 10 segundos geralmente são necessários, eu adicionei 30 áudios de 10 segundos para teste. 
+Para o treinamento no mínimo 2 áudios de 10 segundos geralmente são sugeridos, eu adicionei 30 áudios de 10 segundos para teste. 
 
-Crio com base no áudio .mp3 criado do vídeo inteiro os clipes para treinamento.
+Os clipes foram gerados com base no áudio .mp3 criado do vídeo inteiro.
 
 ##### Etapa 3.3.2: Criar a pasta e salvar os arquivos
 
@@ -169,6 +169,6 @@ Assim como o passo anterior utilizamos a biblioteca MoviePy e na função de aux
 
 Foi um prazer realizar este projeto de avaliação, meu objetivo era gerar algo que fosse realizado somente em um ambiente sem mudança de ferramentas, então o áudio de background pode ser inserido de outras maneiras. 
 
-Um ponto a melhorar na transcrição pode ser a melhoria da pontuação, algo que teria que ler mais como executar dentro do modelo do Whisper. Como o áudio teve que ser modificado no tempo, dá uma ligeira modificada na forma de falar e falta o ajuste do lipsync.
+Um ponto a melhorar na transcrição pode ser a melhoria da pontuação em português, algo que teria que ler mais como executar dentro do modelo do Whisper, ou utilizar a tradução para o inglês que veio melhor pontuada e gerar nossa transcrição em português. Como o áudio teve que ser modificado no tempo, dá uma ligeira modificada na forma de falar e falta o ajuste do lipsync.
 
 Obrigado por essa oportunidade de aprender e contem comigo, gostaria de ser parte da evolução neste ambiente de AI.
